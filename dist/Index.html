@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <div class="tab">
+          <a href="#pictures"><h2>Photography</h2></a>
+        </div>
+        <div class="tab">
+          <a href="#footer"><h2>Contact</h2></a>
+        </div>
+      </header>
+      <div class="grad">
+        <div class="name">
+          <h1>Ben Lipp</h1>
+        </div>
+        <div class="filter">
+          <span class="material-symbols-outlined"> filter_list </span>
+          filter
+          <div id="myDropdown" class="dropdown-content hidden">
+            <a href="#" id="all">All</a>
+            <a href="#" id="concert">Concert</a>
+          </div>
+        </div>
+        <div id="pictures" class="pictures"></div>
+        <footer id="footer" class="footer">
+          <h3>Contact</h3>
+          <address>
+            <a href="mailto:bdlipp@buffalo.edu">bdlipp@buffalo.edu</a>.<br />
+          </address>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./bundle.js"></script>
+</html>
