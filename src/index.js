@@ -3,11 +3,11 @@ import "./style.css";
 
 
 const num_pics = [];
-
+/*
 for (let i = 1; i < 15+1; i++) {
   num_pics.push(i)
 }
-
+*/
 const pictures = document.querySelector(".pictures");
 
 const filter = document.querySelector(".filter");
