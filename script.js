@@ -1,13 +1,7 @@
-import "./style.css";
-
-
-
 const num_pics = [];
-/*
 for (let i = 1; i < 15+1; i++) {
   num_pics.push(i)
 }
-*/
 const pictures = document.querySelector(".pictures");
 
 const filter = document.querySelector(".filter");
@@ -43,7 +37,7 @@ function large(i,pics) {
   var grid = pictures.style.gridTemplateColumns;
   pictures.style.gridTemplateColumns = "1fr";
   var p_img = document.createElement("img");
-  p_img.src = "../src/full/" + i + ".jpg";
+  p_img.src = "./full/" + i + ".jpg";
   p_img.classList.add("p");
   p_img.addEventListener("click", function () {
     pictures.style.gridTemplateColumns = grid;
@@ -65,7 +59,7 @@ function show(pics) {
     div.classList.add("i");
     div.id = pic;
     const img = document.createElement("img");
-    img.src = "../src/thumb/" + pic + ".jpg";
+    img.src = "./thumb/" + pic + ".jpg";
 
     div.addEventListener("click", function () {
       large(pic,pics);

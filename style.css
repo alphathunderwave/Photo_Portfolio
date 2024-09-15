@@ -42,6 +42,7 @@ a:hover {
 
 .name {
   text-align: center;
+  margin-bottom: 50px !important;
 }
 .grad {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #b4b1b1);
