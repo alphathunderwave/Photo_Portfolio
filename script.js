@@ -23,7 +23,27 @@ filter.addEventListener("click", function () {
 });
 const concert = document.querySelector("#concert")
 concert.addEventListener('click', function (){
-  show([1,8,10])
+  show([1,8,10,23,26,29,37])
+})
+const food = document.querySelector("#food")
+food.addEventListener('click', function (){
+  show([6,7,11,17,33])
+})
+const drone = document.querySelector("#drone")
+drone.addEventListener('click', function (){
+  show([4,12,22,31])
+})
+const people = document.querySelector("#people")
+people.addEventListener('click', function (){
+  show([25,27,34,35,36])
+})
+const pets = document.querySelector("#pets")
+pets.addEventListener('click', function (){
+  show([13,14,19,38])
+})
+const things = document.querySelector("#things")
+things.addEventListener('click', function (){
+  show([2,3,9,16,21,23,24,28,32,39])
 })
 const all = document.querySelector("#all")
 all.addEventListener('click', function (){

@@ -13,6 +13,7 @@ body {
   background-size: cover;
   color: white;
   scroll-behavior: smooth;
+  text-shadow: 1px 1px black;
 }
 .header {
   justify-content: center;
@@ -51,7 +52,6 @@ a:hover {
   margin: 10px;
   margin-left: 40px;
   display: inline-block;
-  color: black;
 }
 .filter:hover {
   cursor: pointer;
@@ -133,6 +133,7 @@ a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.125);
+  text-shadow: none;
 }
 .footer a {
   color: black;
