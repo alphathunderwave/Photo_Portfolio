@@ -119,6 +119,12 @@ a:hover:after {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .p {
+    width: 95% !important;
+  }
+  .footer a {
+    font-size: .5em;
+  }
 }
 .i {
   margin: 20px;
