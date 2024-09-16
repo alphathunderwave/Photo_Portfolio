@@ -124,6 +124,8 @@ a:hover:after {
   }
   .footer a {
     font-size: .5em;
+    position: absolute;
+    bottom: 0;  
   }
 }
 .i {
