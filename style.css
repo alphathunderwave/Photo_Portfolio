@@ -122,10 +122,6 @@ a:hover:after {
   .p {
     width: 95% !important;
   }
-  .footer {
-    position: absolute;
-    bottom: 0;  
-  }
   .footer a {
     font-size: .5em;
   }
