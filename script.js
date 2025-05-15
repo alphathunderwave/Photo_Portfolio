@@ -1,59 +1,13 @@
 const num_pics = [];
-for (let i = 1; i < 39+1; i++) {
+for (let i = 1; i < 30+1; i++) {
   num_pics.push(i)
 }
 const pictures = document.querySelector(".pictures");
 
-const filter = document.querySelector(".filter");
-filter.addEventListener("click", function () {
-  document.getElementById("myDropdown").classList.toggle("hidden");
-  window.onclick = function(event) {
-    if (!event.target.matches('.filter')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (!openDropdown.classList.contains('hidden')) {
-          openDropdown.classList.add('hidden');
-        }
-      }
-    }
-  }
-  
-});
-const concert = document.querySelector("#concert")
-concert.addEventListener('click', function (){
-  show([1,8,10,23,26,29,37])
-})
-const food = document.querySelector("#food")
-food.addEventListener('click', function (){
-  show([6,7,11,17,33])
-})
-const drone = document.querySelector("#drone")
-drone.addEventListener('click', function (){
-  show([4,12,22,31])
-})
-const people = document.querySelector("#people")
-people.addEventListener('click', function (){
-  show([25,27,34,35,36])
-})
-const pets = document.querySelector("#pets")
-pets.addEventListener('click', function (){
-  show([13,14,19,38])
-})
-const things = document.querySelector("#things")
-things.addEventListener('click', function (){
-  show([2,3,9,16,21,23,24,28,32,39])
-})
-const all = document.querySelector("#all")
-all.addEventListener('click', function (){
-  show(num_pics)
-})
 
 function large(i,pics) {
   pictures.innerHTML = "";
   pictures.style.marginTop = "0px";
-  filter.classList.add('hidden')
   var grid = pictures.style.gridTemplateColumns;
   pictures.style.gridTemplateColumns = "1fr";
   var p_img = document.createElement("img");
@@ -72,7 +26,6 @@ function large(i,pics) {
 
 function show(pics) {
   pictures.innerHTML = "";
-  filter.classList.remove('hidden')
   document.querySelector(".name").style.marginBottom = "250px";
   pics.forEach(pic => {
     const div = document.createElement("div");
